@@ -12,7 +12,7 @@ args=(
   --node-ip-address=127.0.0.1
   --port=8889
   #
-  --ray-debugger-external
+  # --ray-debugger-external
 )
 ray "${args[@]}"
 

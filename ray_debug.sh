@@ -1,5 +1,5 @@
 # breakpoint()
-python t0.job.py
+python ray_debug.py
 
 # post_mortem
-# python t0.job.py 1
+# python ray_debug.py 1
