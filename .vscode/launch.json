@@ -9,7 +9,8 @@
       "type": "debugpy",
       "request": "attach",
       "connect": {
-        "host": "localhost",
+        // "host": "localhost",
+        "host": "127.0.0.1", // replace with real ip if needed
         // "port": 54053
         "port": "${input:Port}",
       },

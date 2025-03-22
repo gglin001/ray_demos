@@ -12,4 +12,10 @@
         },
     },
     "terminal.integrated.defaultProfile.osx": "zsh_conda",
+    "terminal.integrated.env.osx": {
+        "RAY_DEDUP_LOGS": "0",
+    },
+    "terminal.integrated.env.linux": {
+        "RAY_DEDUP_LOGS": "0",
+    },
 }
