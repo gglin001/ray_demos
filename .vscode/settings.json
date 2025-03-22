@@ -1,0 +1,15 @@
+{
+    "terminal.integrated.profiles.osx": {
+        "zsh_conda": {
+            "path": "zsh",
+            "args": [
+                "-l",
+                // "-v",
+            ],
+            "env": {
+                "ZDOTDIR": "${workspaceFolder}/.vscode/zdotdir",
+            },
+        },
+    },
+    "terminal.integrated.defaultProfile.osx": "zsh_conda",
+}
