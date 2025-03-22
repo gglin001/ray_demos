@@ -9,6 +9,8 @@ ray.init(
     runtime_env={
         "env_vars": {
             "RAY_DEBUG_POST_MORTEM": "1",
+            # NOTE: seems RAY_DEBUG with vscode ext not works now,
+            # need manually start debugpy attch in vscode, check `.vscode/launch.json`
             "RAY_DEBUG": "1",
             # "RAY_DEBUG": "legacy",
         },
