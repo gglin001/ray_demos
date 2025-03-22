@@ -18,4 +18,6 @@ ray status
 ray list nodes
 ray list runtime-envs
 
+ray stop
+
 ###############################################################################
