@@ -17,5 +17,6 @@
     },
     "terminal.integrated.env.linux": {
         "RAY_DEDUP_LOGS": "0",
+        // "RAY_EXPERIMENTAL_NOSET_CUDA_VISIBLE_DEVICES": "1", // exp
     },
 }

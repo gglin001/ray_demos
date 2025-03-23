@@ -22,7 +22,7 @@ ray.init(
 def f0():
     # breakpoint()
     print(f"torch.cuda.device_count: {torch.cuda.device_count()}")
-    print(f"CUDA_VISIBLE_DEVICES: {os.environ['CUDA_VISIBLE_DEVICES']}")
+    print(f"CUDA_VISIBLE_DEVICES: {os.environ.get('CUDA_VISIBLE_DEVICES', 'NONE')}")
     pg = ray.util.get_current_placement_group()
     bs = pg.bundle_specs
     print(bs)
@@ -35,7 +35,7 @@ def f1():
     # for k in sorted(os.environ.keys()):
     #     print(f"{k}: {os.environ[k]}")
     print(f"torch.cuda.device_count: {torch.cuda.device_count()}")
-    print(f"CUDA_VISIBLE_DEVICES: {os.environ['CUDA_VISIBLE_DEVICES']}")
+    print(f"CUDA_VISIBLE_DEVICES: {os.environ.get('CUDA_VISIBLE_DEVICES', 'NONE')}")
     pg = ray.util.get_current_placement_group()
     bs = pg.bundle_specs
     print(bs)

@@ -22,7 +22,7 @@ ray.init(
 def f0():
     # breakpoint()
     print(f"torch.cuda.device_count: {torch.cuda.device_count()}")
-    print(f"CUDA_VISIBLE_DEVICES: {os.environ['CUDA_VISIBLE_DEVICES']}")
+    print(f"CUDA_VISIBLE_DEVICES: {os.environ.get('CUDA_VISIBLE_DEVICES', 'NONE')}")
     dev = torch.device("cuda:0")
     torch.cuda.set_device(dev)
     print(dev)
@@ -33,7 +33,7 @@ def f0():
 def f1():
     # breakpoint()
     print(f"torch.cuda.device_count: {torch.cuda.device_count()}")
-    print(f"CUDA_VISIBLE_DEVICES: {os.environ['CUDA_VISIBLE_DEVICES']}")
+    print(f"CUDA_VISIBLE_DEVICES: {os.environ.get('CUDA_VISIBLE_DEVICES', 'NONE')}")
     dev = torch.device("cuda:1")
     torch.cuda.set_device(dev)
     print(dev)

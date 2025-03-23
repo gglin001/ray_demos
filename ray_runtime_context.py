@@ -20,7 +20,7 @@ ray.init(
 def f0():
     # breakpoint()
     print(f"torch.cuda.device_count: {torch.cuda.device_count()}")
-    print(f"CUDA_VISIBLE_DEVICES: {os.environ['CUDA_VISIBLE_DEVICES']}")
+    print(f"CUDA_VISIBLE_DEVICES: {os.environ.get('CUDA_VISIBLE_DEVICES', 'NONE')}")
 
     runtime_context: ray.runtime_context.RuntimeContext = ray.get_runtime_context()
     job_id = runtime_context.get_job_id()
