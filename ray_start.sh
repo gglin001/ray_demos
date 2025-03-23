@@ -6,12 +6,13 @@ args=(
   #
   --head
   #
-  # --node-ip-address=10.10.3.11
-  # --port=6379
+  # --node-ip-address=10.0.0.1
+  # --port=9999
   #
   --node-ip-address=127.0.0.1
   --port=8889
   #
+  --disable-usage-stats
   # --ray-debugger-external
 )
 ray "${args[@]}"
